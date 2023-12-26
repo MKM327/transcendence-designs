@@ -1,0 +1,30 @@
+:root {
+  --main-color: #201433;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  margin: 0 !important;
+}
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/disarda-fotor-202312242273.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 80%;
+  flex: 1;
+}
