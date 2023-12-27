@@ -55,15 +55,7 @@
   font-size: smaller;
   flex: 1;
 }
-.chat-input-wrapper {
-  position: relative;
-  width: 100%;
-  border-radius: 10rem;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .chat-send {
   content: "";
   height: 1.3rem;
@@ -74,14 +66,7 @@
   top: 4.5px;
   cursor: pointer;
 }
-.chat-input-wrapper > input {
-  background: transparent;
-  border-radius: 10rem;
-  padding-left: 10px;
-  outline: 1px rgba(255, 255, 255, 0.274) solid;
-  border: none;
-  width: 90%;
-}
+
 .received-message {
   align-self: flex-start;
   text-wrap: wrap;

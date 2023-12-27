@@ -1,0 +1,78 @@
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/inside.jpg") !important;
+}
+.users-wrapper {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 2rem;
+  text-wrap: wrap;
+  overflow: hidden;
+}
+.chat-send-wrapper {
+  width: 100%;
+  border-radius: 10rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chat-send-wrapper > input {
+  width: 90%;
+}
+input {
+  background: transparent;
+  border-radius: 10rem;
+  padding-left: 10px;
+  outline: 1px rgba(255, 255, 255, 0.274) solid;
+  border: none;
+}
+.user-pic-wrapper {
+  aspect-ratio: 1/1;
+  width: 3rem;
+  border-radius: 50%;
+}
+.user-pic-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-wrapper {
+  display: flex;
+  gap: 10px;
+  text-wrap: wrap;
+}
+
+.user-info-wrapper > span {
+  font-size: x-small;
+}
+.user-info-wrapper > div > h6 {
+  margin: 0;
+}
+.online-icon {
+  background-color: green;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 1px;
+}
+.user-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+.user-data-wrapper::-webkit-scrollbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 5px;
+}
+.user-data-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 43, 43, 0.493);
+}
+.chat-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding-right: 2rem;
+}
