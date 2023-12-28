@@ -1,4 +1,4 @@
-.background {
+.social-background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/public/inside.jpg") !important;
 }
@@ -45,6 +45,8 @@ input {
   cursor: pointer;
   padding: 5px;
   transition: background-color 0.2s linear;
+  max-width: 100%;
+  text-wrap: nowrap;
 }
 .user-wrapper:hover {
   background-color: rgba(71, 71, 71, 0.178);
@@ -67,6 +69,9 @@ input {
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
+  z-index: 0;
+  max-width: 200px;
+  overflow-x: hidden;
 }
 .user-data-wrapper::-webkit-scrollbar {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -84,6 +89,17 @@ input {
   gap: 1rem;
   max-width: 400px;
   overflow: hidden;
+  transition: all 1s linear;
+}
+.chat-transition {
+  background-color: black !important;
+  transform: translateX(0) !important;
+  z-index: 10;
+}
+.chat-closed {
+  transform: translateX(-200%);
+  background-color: black;
+  z-index: 10;
 }
 .active-user-wrapper {
   display: flex;
@@ -111,7 +127,10 @@ input {
 .active-user-info-wrapper {
   margin-top: 1rem;
   overflow: hidden;
+  text-wrap: nowrap;
+  flex: 1;
 }
+
 .user-info {
   display: flex;
   gap: 5px;
@@ -134,7 +153,6 @@ input {
 .received-message-container > span {
   text-decoration: underline;
 }
-
 .sent-message-container {
   font-size: small;
   display: flex;
