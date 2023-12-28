@@ -179,3 +179,90 @@ input {
 .conversation-wrapper::-webkit-scrollbar-thumb {
   background-color: rgba(43, 43, 43, 0.493);
 }
+.social-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.social-send {
+  position: relative;
+  width: 100%;
+}
+.social-send > input {
+  height: 3rem;
+  width: 100%;
+}
+.social-send > input::placeholder {
+  color: rgba(177, 177, 177, 0.397);
+}
+.social-wrapper {
+  flex-basis: 450px;
+  overflow: hidden;
+  gap: 10px;
+}
+.social-send img {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  cursor: pointer;
+}
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  flex-basis: 100%;
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.post-info {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  flex-basis: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-info div:nth-child(2) h6 {
+  margin: 0;
+}
+.post-info div:nth-child(2) span {
+  font-size: smaller;
+}
+.post-text {
+  font-size: small;
+}
+.post-text p {
+  margin: 0;
+}
+.post-image {
+  width: 100%;
+  object-fit: contain;
+}
+.post-interaction {
+  display: flex;
+  gap: 10px;
+}
+.post-interaction :nth-child(3) {
+  flex: 1;
+}
+.post-interaction :nth-child(3) > input {
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+}
+.post-interaction :nth-child(3) > input::placeholder {
+  text-align: center;
+}
+.posts-container::-webkit-scrollbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 5px;
+}
+.posts-container::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 43, 43, 0.493);
+}
