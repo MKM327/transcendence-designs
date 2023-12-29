@@ -235,9 +235,17 @@ input {
   flex-basis: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+}
+.post-info div:nth-child(2) {
+  width: 100%;
+  overflow: hidden;
 }
 .post-info div:nth-child(2) h6 {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 .post-info div:nth-child(2) span {
   font-size: smaller;
@@ -255,6 +263,9 @@ input {
 .post-interaction {
   display: flex;
   gap: 10px;
+}
+.post-interaction div > img {
+  cursor: pointer;
 }
 .post-interaction :nth-child(3) {
   flex: 1;
