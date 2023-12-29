@@ -11,7 +11,7 @@ function toggleChat() {
     chatContainer.classList.add("chat-transition");
     setTimeout(() => {
       chatContainer.classList.remove("chat-transition");
-    }, 500);
+    }, 1000);
     chatContainer.classList.add("chat-closed");
   }
 }
