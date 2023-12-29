@@ -95,16 +95,11 @@ input {
   background-color: black !important;
   transform: translateX(0) !important;
   z-index: 10;
-  height: 735.19px;
-  left: 272px;
 }
 .chat-closed {
   transform: translateX(-200%);
   background-color: black;
   z-index: 10;
-  position: absolute;
-  height: 735.19px;
-  left: 272px;
 }
 .active-user-wrapper {
   display: flex;
@@ -189,7 +184,6 @@ input {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  transition: all linear 1s;
 }
 .social-send {
   position: relative;
