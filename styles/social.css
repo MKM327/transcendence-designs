@@ -183,6 +183,7 @@ input {
   flex: 1;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .social-send {
   position: relative;
@@ -200,10 +201,16 @@ input {
   overflow: hidden;
   gap: 10px;
 }
-.social-send img {
+.social-send img:nth-of-type(2) {
   position: absolute;
   top: 0px;
   right: 15px;
+  cursor: pointer;
+}
+.social-send img:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+  right: 40px;
   cursor: pointer;
 }
 .posts-container {
@@ -265,4 +272,15 @@ input {
 }
 .posts-container::-webkit-scrollbar-thumb {
   background-color: rgba(43, 43, 43, 0.493);
+}
+.social-send-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+.social-send-info > h6 {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
