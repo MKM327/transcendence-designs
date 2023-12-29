@@ -44,7 +44,7 @@ input {
   gap: 10px;
   cursor: pointer;
   padding: 5px;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.2s ease;
   max-width: 100%;
   text-wrap: nowrap;
 }
@@ -89,7 +89,7 @@ input {
   gap: 1rem;
   max-width: 400px;
   overflow: hidden;
-  transition: all 1s linear;
+  transition: all 1s ease;
 }
 .chat-transition {
   background-color: black !important;
