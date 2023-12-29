@@ -20,7 +20,19 @@
   </head>
   <body>
     <main class="main">
-      <div class="background container-fluid" style="padding: 0">
+      <div
+        class="background container-fluid position-relative"
+        style="padding: 0"
+      >
+        <div class="multiplayer-menu">
+          <button class="return-to-main" id="multi-close-button">X</button>
+          <div class="find-match">
+            <img src="/public/Clouds 3.png" alt="" />
+          </div>
+          <div class="find-tournement">
+            <img src="/public/Clouds 7.png" alt="" />
+          </div>
+        </div>
         <div class="main-buttons-wrapper">
           <div class="profile-wrapper">
             <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
@@ -37,13 +49,16 @@
             </div>
             <div class="button-wrapper">
               <button class="play-button">LEADERBOARD</button>
-              <button class="play-button">MULTIPLAYER</button>
+              <button class="play-button" id="multiplayer-button">
+                MULTIPLAYER
+              </button>
               <button class="play-button">SINGLEPLAYER</button>
               <button class="play-button">SOCIAL</button>
             </div>
           </div>
         </div>
       </div>
+      <script src="/scripts/main-site.js"></script>
     </main>
   </body>
 </html>
