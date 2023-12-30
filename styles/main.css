@@ -33,8 +33,11 @@ img {
   height: 100%;
 }
 
-@media only screen and (max-width: 800px) {
-  .social-container {
-    display: none;
-  }
+
+::-webkit-scrollbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 43, 43, 0.493);
 }

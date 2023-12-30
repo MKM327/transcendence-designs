@@ -73,13 +73,7 @@ input {
   max-width: 250px;
   overflow-x: hidden;
 }
-.user-data-wrapper::-webkit-scrollbar {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  width: 5px;
-}
-.user-data-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 43, 43, 0.493);
-}
+
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -172,13 +166,7 @@ input {
   right: 5px;
   width: 20px;
 }
-.conversation-wrapper::-webkit-scrollbar {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  width: 5px;
-}
-.conversation-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 43, 43, 0.493);
-}
+
 .social-container {
   flex: 1;
   display: flex;
@@ -198,16 +186,56 @@ input {
 .social-send > input::placeholder {
   color: rgba(177, 177, 177, 0.397);
 }
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+
+@keyframes fadeOutAndHide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+}
+
 .social-wrapper {
   flex-basis: 450px;
   overflow: hidden;
   gap: 10px;
   transition: transform 1s linear;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease;
+}
+.social-wrapper-closed {
+  animation: fadeOutAndHide 1s ease;
+  animation-fill-mode: forwards;
+}
+.selected-post {
+  flex-basis: 450px;
+  overflow: hidden;
+  display: none;
+  animation: fadeOutAndHide 1s ease;
+}
+.selected-post-open {
+  display: block;
+  animation: fadeIn 1s ease;
 }
 .social-wrapper-open {
   transform: translate(0px);
 }
-.social-wrapper-closed {
+.social-wrapper-chat-closed {
   transform: translate(-200px);
 }
 .social-send img:nth-of-type(2) {
@@ -236,6 +264,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  height: 100%;
 }
 .post-info {
   display: flex;
@@ -297,13 +326,7 @@ input {
 .post-interaction :nth-child(3) > input::placeholder {
   text-align: center;
 }
-.posts-container::-webkit-scrollbar {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  width: 5px;
-}
-.posts-container::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 43, 43, 0.493);
-}
+
 .social-send-info {
   display: flex;
   align-items: center;
@@ -314,4 +337,36 @@ input {
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.post-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.post-comment {
+  display: flex;
+  gap: 5px;
+  text-overflow: ellipsis;
+}
+.post-comment h6 {
+  font-size: smaller;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.post-comment p {
+  font-size: smaller;
+}
+@media only screen and (max-width: 800px) {
+  .social-container {
+    display: none;
+  }
+}
+.comment-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
