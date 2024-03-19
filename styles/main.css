@@ -33,11 +33,15 @@ img {
   height: 100%;
 }
 
-
 ::-webkit-scrollbar {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(43, 43, 43, 0.493);
+}
+
+.social-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/inside.jpg") !important;
 }

@@ -1,0 +1,33 @@
+.profile-wrapper {
+  display: flex;
+  height: 100%;
+  margin: auto;
+  width: 80%;
+  margin-top: 2rem;
+}
+.profile-photo {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+}
+.profile-photo > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.data-headers {
+  display: flex;
+}

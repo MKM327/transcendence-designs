@@ -51,6 +51,5 @@
   position: absolute;
 }
 .ecole-login-button > div > img {
-  background-image: url("/public/42.svg");
   width: 1.5rem;
 }
