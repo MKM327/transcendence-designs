@@ -21,6 +21,10 @@
   </head>
   <body>
     <main class="main">
+      <ul class="chat-options" id="chat-options">
+        <li>Invite to Pong</li>
+        <li>Go To Profile</li>
+      </ul>
       <div
         class="background container-fluid social-background"
         style="padding: 0"
@@ -37,7 +41,7 @@
                 </div>
               </div>
               <div class="user-data-wrapper">
-                <div class="user-wrapper">
+                <div class="user-wrapper" id="user-wrapper">
                   <div class="user-pic-wrapper">
                     <img
                       src="https://picsum.photos/seed/picsum/200/300"
@@ -193,98 +197,9 @@
               </div>
             </div>
             <div class="chat-container">
-              <div class="active-user-wrapper">
-                <div class="user-info">
-                  <div class="user-pic-wrapper">
-                    <img
-                      src="https://picsum.photos/seed/picsum/200/300"
-                      alt=""
-                    />
-                  </div>
-                  <div class="active-user-info-wrapper">
-                    <h6>test1</h6>
-                    <span>active now</span>
-                    <div class="spotify-info">
-                      <img src="/public/music.svg" alt="" style="width: 20px" />
-                      <span>Currently listening test123</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <img src="/public/more.svg" alt="" style="width: 50px" />
-                  <div id="chat-close-button" style="cursor: pointer">
-                    <img src="/public/go-back.svg" alt="" />
-                  </div>
-                </div>
+              <div class="no-chat-wrapper">
+                <h6>Select a user To chat with</h6>
               </div>
-              <div class="conversation-wrapper">
-                <div class="received-message-container">
-                  <span>TEST6</span>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
-                    repudiandae autem quibusdam totam numquam explicabo saepe
-                    iure veritatis natus voluptas voluptate eveniet quos quasi
-                    facilis laudantium suscipit, obcaecati optio illo.
-                  </p>
-                </div>
-                <div class="sent-message-container">
-                  <span>TEST2</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quis cumque maxime iste odio ratione aliquid nisi commodi
-                    asperiores, quo nihil sint, voluptate iure vel accusamus
-                    odit incidunt porro debitis illo!
-                  </p>
-                </div>
-                <div class="sent-message-container">
-                  <span>lorem</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quis cumque maxime iste odio ratione aliquid nisi commodi
-                    asperiores, quo nihil sint, voluptate iure vel accusamus
-                    odit incidunt porro debitis illo!
-                  </p>
-                </div>
-                <div class="sent-message-container">
-                  <span>TEST2</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veniam accusantium fugit ad magnam, odio numquam id quidem
-                    saepe, deserunt consequuntur commodi animi dolor error
-                    debitis sed natus minus. Tempora, laborum?
-                  </p>
-                </div>
-                <div class="received-message-container">
-                  <span>TEST6</span>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
-                    repudiandae autem quibusdam totam numquam explicabo saepe
-                    iure veritatis natus voluptas voluptate eveniet quos quasi
-                    facilis laudantium suscipit, obcaecati optio illo.
-                  </p>
-                </div>
-                <div class="received-message-container">
-                  <span>TEST6</span>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
-                    repudiandae autem quibusdam totam numquam explicabo saepe
-                    iure veritatis natus voluptas voluptate eveniet quos quasi
-                    facilis laudantium suscipit, obcaecati optio illo.
-                  </p>
-                </div>
-              </div>
-              <form class="send-container" style="margin-bottom: 1px">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Send a message"
-                  style="width: 100%"
-                />
-                <div>
-                  <img src="/public/send.svg" alt="" />
-                </div>
-              </form>
             </div>
           </div>
           <div class="social-container py-2">

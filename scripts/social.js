@@ -46,5 +46,33 @@ function handleSelectedPost() {
     selectedPost.classList.remove("selected-post-open");
   });
 }
+function handleChatEvents() {
+  let elements = document.getElementsByClassName("user-wrapper");
+  console.log(elements);
+  for (let element of elements) {
+    element.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+      let mouseX = event.clientX;
+      let mouseY = event.clientY;
+      let chatOptions = document.getElementById("chat-options");
+      chatOptions.style.top = `${mouseY}px`;
+      chatOptions.style.left = `${mouseX}px`;
+      chatOptions.classList.add("chat-options-open");
+      chatOptions.addEventListener("click", (event) => {
+        event.stopPropagation();
+      });
+      document.addEventListener(
+        "click",
+        function closeMenu(event) {
+          chatOptions.classList.remove("chat-options-open");
+
+          document.removeEventListener("click", closeMenu);
+        },
+        { once: true }
+      );
+    });
+  }
+}
+handleChatEvents();
 handleSelectedPost();
 handleChatState();

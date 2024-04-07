@@ -1,7 +1,3 @@
-.social-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/public/inside.jpg") !important;
-}
 .users-wrapper {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -151,6 +147,11 @@ input {
   font-size: small;
   display: flex;
   flex-direction: column;
+}
+.sent-message-container > p {
+  align-self: flex-end;
+  margin-right: 15px;
+  word-break: break-all;
 }
 .sent-message-container > span {
   text-decoration: underline;
@@ -369,4 +370,39 @@ input {
   background-color: transparent;
   outline: none;
   border: none;
+}
+.chat-options {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  border: 1px solid white;
+  user-select: none;
+}
+.chat-options li {
+  cursor: pointer;
+  padding: 10px;
+}
+.chat-options li:hover {
+  background: linear-gradient(
+    rgba(185, 185, 185, 0.897),
+    rgba(185, 185, 185, 0.897)
+  );
+  color: black;
+}
+
+.chat-options-open {
+  visibility: visible;
+}
+
+.no-chat-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
