@@ -25,44 +25,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #single-menu {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/public/SingleCloud.png");
   background-size: cover;
   background-position: center;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #single-menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url("/public/SingleCloud.png");
   background-size: cover;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #multi-menu {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/public/MultiCloud.png");
   background-size: cover;
   background-position: center;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #multi-menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url("/public/MultiCloud.png");
   background-size: cover;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #social-menu {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/public/SocialCloud.png");
   background-size: cover;
   background-position: center;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
 #social-menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url("/public/SocialCloud.png");
   background-size: cover;
-  transition: background-position 0.5s ease;
+  transition: background-position 0.8s ease;
 }
