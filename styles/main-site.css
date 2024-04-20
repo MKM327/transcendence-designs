@@ -17,8 +17,7 @@
   flex: 1;
   display: flex;
   position: relative;
-  z-index: 10;
-  background-color: black;
+  cursor: pointer;
 }
 .home-element h1 {
   position: absolute;
@@ -26,38 +25,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
-  transition: all 0.5s ease;
+  transition: background-position 0.5s ease;
 }
 #single-menu {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/SingleCloud.png");
   background-size: cover;
   background-position: center;
+  transition: background-position 0.5s ease;
 }
 #single-menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url("/public/SingleCloud.png");
-  background-size: 120%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-position 0.5s ease;
 }
 #multi-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/MultiCloud.png");
   background-size: cover;
   background-position: center;
+  transition: background-position 0.5s ease;
 }
 #multi-menu:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("/public/MultiCloud.png");
+  background-size: cover;
+  transition: background-position 0.5s ease;
+}
+#social-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/SocialCloud.png");
   background-size: cover;
   background-position: center;
-}
-.image-wrapper {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.image-wrapper img {
-  object-fit: cover;
+  transition: background-position 0.5s ease;
 }
 #social-menu:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("/public/SocialCloud.png");
   background-size: cover;
-  background-position: center;
+  transition: background-position 0.5s ease;
 }
