@@ -20,36 +20,71 @@
   </head>
   <body>
     <main class="main">
-      <div
-        class="background container-fluid position-relative"
-        style="padding: 0"
-      >
-        <div class="main-buttons-wrapper">
-          <div class="profile-wrapper">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
-          </div>
-          <div class="play-wrapper">
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <h1>WELCOME TO PONG</h1>
-            </div>
-            <div class="button-wrapper">
-              <button class="play-button">LEADERBOARD</button>
-              <button class="play-button" id="multiplayer-button">
-                MULTIPLAYER
-              </button>
-              <button class="play-button">SINGLEPLAYER</button>
-              <button class="play-button">SOCIAL</button>
-            </div>
-          </div>
+      <div class="profile-data">
+        <div class="profile-wrapper">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        </div>
+        <div class="inbox-wrapper">
+          <input type="checkbox" id="input-button" />
+          <label for="input-button" class="input-label">
+            <img src="/public/inbox.svg" alt="" />
+          </label>
+          <ul class="inbox-list">
+            <li class="inbox-element">
+              <div>
+                <div class="inbox-sender-image">
+                  <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                </div>
+                <div>
+                  MKM invited you to play a game of pong. Do you accept?
+                </div>
+              </div>
+              <div class="inbox-element-interactions">
+                <button id="interaction-accept">Accept</button>
+                <button id="interaction-reject">Reject</button>
+              </div>
+            </li>
+            <li class="inbox-element">
+              <div>
+                <div class="inbox-sender-image">
+                  <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+                </div>
+                <div>
+                  MKM invited you to play a game of pong. Do you accept?
+                </div>
+              </div>
+              <div class="inbox-element-interactions">
+                <button id="interaction-accept">Accept</button>
+                <button id="interaction-reject">Reject</button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <script src="/scripts/main-site.js"></script>
+
+      <div
+        class="container-fluid position-relative home-wrapper"
+        style="padding: 0"
+      >
+        <div class="home-element menu-element" id="single-menu">
+          <div class="image-wrapper">
+            <img src="/public/SingleCloud.png" alt="" />
+          </div>
+          <h1>Singleplayer</h1>
+        </div>
+        <div class="home-element" id="multi-menu">
+          <div class="image-wrapper">
+            <img src="/public/MultiCloud.png" alt="" />
+          </div>
+          <h1>Multiplayer</h1>
+        </div>
+        <div class="home-element" id="social-menu">
+          <div class="image-wrapper">
+            <img src="/public/SocialCloud.png" alt="" />
+          </div>
+          <h1>Social</h1>
+        </div>
+      </div>
     </main>
   </body>
 </html>

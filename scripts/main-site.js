@@ -10,4 +10,5 @@ function handleMultiplayerClick() {
     multiplayerContainer.classList.toggle("d-flex", false);
   });
 }
+
 handleMultiplayerClick();
