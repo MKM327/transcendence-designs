@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üzerine Gelince Metin Gösterme</title>
+<style>
+    #container {
+        position: relative;
+        display: inline-block;
+    }
+
+    #hover-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    #container:hover #hover-text {
+        visibility: visible;
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+    <img src="resim.jpg" alt="Resim">
+    <div id="hover-text">Fotoğrafın Üstünde Metin</div>
+</div>
+
+</body>
+<script>
+    // İlgili elementleri seç
+    var container = document.getElementById('container');
+    var hoverText = document.getElementById('hover-text');
+
+    // İmleç resmin üzerine geldiğinde metni göster
+    container.addEventListener('mouseover', function() {
+        hoverText.style.visibility = 'visible';
+    });
+
+    // İmleç resmin üzerinden çekildiğinde metni gizle
+    container.addEventListener('mouseout', function() {
+        hoverText.style.visibility = 'hidden';
+    });
+</script>
+</html>
