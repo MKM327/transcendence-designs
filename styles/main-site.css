@@ -34,6 +34,12 @@
   background-position: center;
   transition: background-position 0.8s ease;
 }
+#single-menu::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
 #single-menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url("/public/SingleCloud.png");
